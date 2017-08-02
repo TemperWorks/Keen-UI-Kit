@@ -24,13 +24,13 @@ IE 10+ (due to [Flexbox support](http://caniuse.com/#search=flexbox)).
 ### NPM (recommended)
 
 ```bash
-npm install keen-ui --save
+npm install keen-ui-kit --save
 ```
 
 ### Bower
 
 ```bash
-bower install keen-ui --save
+bower install keen-ui-kit --save
 ```
 
 ## Usage
@@ -62,7 +62,7 @@ Use as a plugin (registers all components with Vue globally):
 
 ```js
 import Vue from 'vue';
-import KeenUI from 'keen-ui';
+import KeenUI from 'keen-ui-kit';
 
 Vue.use(KeenUI);
 
@@ -77,7 +77,7 @@ Use individual components:
 
 ```js
 import Vue from 'vue';
-import { UiAlert, UiButton } from 'keen-ui';
+import { UiAlert, UiButton } from 'keen-ui-kit';
 
 new Vue({
     components: {
@@ -133,8 +133,8 @@ Each component has been compiled as a self-contained file which you can use with
 
 ```js
 import Vue from 'vue';
-import 'keen-ui/src/bootstrap'; // Required when using components from `lib/`, should be imported only once in your project
-import UiButton from 'keen-ui/lib/UiButton';
+import 'keen-ui-kit/src/bootstrap'; // Required when using components from `lib/`, should be imported only once in your project
+import UiButton from 'keen-ui-kit/lib/UiButton';
 
 new Vue({
     components: {
