@@ -1,6 +1,6 @@
 {
-  "name": "keen-ui",
-  "version": "1.0.0",
+  "name": "keen-ui-kit",
+  "version": "0.0.1",
   "description": "A lightweight collection of essential UI components written with Vue and inspired by Material Design.",
   "main": "dist/keen-ui.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JosephusPaye/Keen-UI.git"
+    "url": "git+https://github.com/TemperWorks/Keen-UI-Kit.git"
   },
   "keywords": [
     "vue",
@@ -36,11 +36,18 @@
   "author": {
     "name": "Josephus Paye II"
   },
+  "contributors": [
+    {
+      "name": "Yordi de Kleijn",
+      "email": "yordi@temper.works",
+      "url": "https://github.com/YordiLorenzo"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JosephusPaye/Keen-UI/issues"
+    "url": "https://github.com/TemperWorks/Keen-UI-Kit/issues"
   },
-  "homepage": "https://github.com/JosephusPaye/Keen-UI/",
+  "homepage": "https://github.com/TemperWorks/Keen-UI-Kit",
   "dependencies": {
     "autosize": "^3.0.20",
     "deep-assign": "^2.0.0",
@@ -70,7 +77,7 @@
     "prismjs": "^1.5.1",
     "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
-    "vue": "^2.1.7",
+    "vue": "^2.4.2",
     "vue-loader": "^10.0.2",
     "vue-router": "^2.1.0",
     "vue-style-loader": "^1.0.0",
