@@ -79,7 +79,7 @@ if (options.isProduction) {
         // Minify with dead-code elimination
         new webpack.optimize.UglifyJsPlugin({
             compress: {
-                warnings: false
+                warnings: true
             }
         })
     ]);
