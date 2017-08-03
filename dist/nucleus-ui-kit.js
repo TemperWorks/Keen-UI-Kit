@@ -1,8 +1,4 @@
-/*!
- * Keen UI v0.0.1 (https://github.com/JosephusPaye/keen-ui)
- * (c) 2017 Josephus Paye II
- * Released under the MIT License.
- */
+
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -182,7 +178,7 @@ module.exports = Component.exports
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.KeenUiConfig = undefined;
+exports.NucleusConfig = undefined;
 
 var _classCallCheck2 = __webpack_require__(130);
 
@@ -251,14 +247,14 @@ var config = {
     }
 };
 
-var KeenUiConfig = exports.KeenUiConfig = function () {
-    function KeenUiConfig() {
-        (0, _classCallCheck3.default)(this, KeenUiConfig);
+var NucleusConfig = exports.NucleusConfig = function () {
+    function NucleusConfig() {
+        (0, _classCallCheck3.default)(this, NucleusConfig);
 
-        this.data = (0, _deepAssign2.default)(config, window.KeenUiConfig ? window.KeenUiConfig : {});
+        this.data = (0, _deepAssign2.default)(config, window.NucleusConfig ? window.NucleusConfig : {});
     }
 
-    (0, _createClass3.default)(KeenUiConfig, [{
+    (0, _createClass3.default)(NucleusConfig, [{
         key: 'set',
         value: function set() {
             var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -266,10 +262,10 @@ var KeenUiConfig = exports.KeenUiConfig = function () {
             this.data = (0, _deepAssign2.default)(this.data, config);
         }
     }]);
-    return KeenUiConfig;
+    return NucleusConfig;
 }();
 
-exports.default = new KeenUiConfig();
+exports.default = new NucleusConfig();
 
 /***/ }),
 /* 3 */
@@ -10597,7 +10593,7 @@ var _UiTooltip2 = _interopRequireDefault(_UiTooltip);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Keen = {
+var Nucleus = {
     UiAlert: _UiAlert2.default,
     UiAutocomplete: _UiAutocomplete2.default,
     UiButton: _UiButton2.default,
@@ -10668,10 +10664,10 @@ var Keen = {
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(Keen);
+    window.Vue.use(Nucleus);
 }
 
-exports.default = Keen;
+exports.default = Nucleus;
 exports.UiAlert = _UiAlert2.default;
 exports.UiAutocomplete = _UiAutocomplete2.default;
 exports.UiButton = _UiButton2.default;

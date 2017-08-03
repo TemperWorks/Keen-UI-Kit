@@ -11,7 +11,7 @@ const config = merge(base, {
     entry: options.paths.resolve('src/index.js'),
 
     output: {
-        filename: options.isProduction ? 'keen-ui.min.js' : 'keen-ui.js',
+        filename: options.isProduction ? 'nucleus-ui-kit.min.js' : 'nucleus-ui-kit.js',
         path: options.paths.output.main,
         library: 'KeenUI',
         libraryTarget: 'umd'
@@ -25,7 +25,7 @@ const config = merge(base, {
         }),
 
         new ExtractTextPlugin({
-            filename: options.isProduction ? 'keen-ui.min.css' : 'keen-ui.css'
+            filename: options.isProduction ? 'nucleus-ui-kit.min.css' : 'nucleus-ui-kit.css'
         })
     ]
 });

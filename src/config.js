@@ -53,9 +53,9 @@ const config = {
     }
 };
 
-export class KeenUiConfig {
+export class NucleusConfig {
     constructor() {
-        this.data = merge(config, window.KeenUiConfig ? window.KeenUiConfig : {});
+        this.data = merge(config, window.NucleusConfig ? window.NucleusConfig : {});
     }
 
     set(config = {}) {
@@ -63,4 +63,4 @@ export class KeenUiConfig {
     }
 }
 
-export default new KeenUiConfig();
+export default new NucleusConfig();

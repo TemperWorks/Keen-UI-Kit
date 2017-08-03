@@ -1,16 +1,18 @@
-# Keen UI
+# Nucleus UI Kit
 
-> A lightweight collection of essential UI components written with Vue and inspired by Material Design.
+> The central and most important part of an object, movement, or group, forming the basis for its activity and growth.
 
-Keen UI is designed to be a lightweight [Vue.js](http://vuejs.org) UI library with a simple API. Though the design is inspired by Google's [Material Design](https://material.io/guidelines), Keen UI is not meant to be a full implementation of the spec.
+The Nucleus UI Kit is designed to be the centerpiece of our front-end work over at Temper. It is a UI library based on [Vue.js](http://vuejs.org) with a simple API. Its designed is inspired by Material Design with a big influence of our amazing designers. The Nucleus UI Kit is no exact implementation of the Material design spec.
 
-Keen UI is **not** a CSS framework, and as such you won't find a grid system or styles for typography in it. Instead, the focus is on creating reusable components that have interactivity.
+##Sidenote
+
+Nucleus is **not** a CSS framework, and as such you won't find a grid system or styles for typography in it. Instead, the focus is on creating reusable components that have interactivity.
 
 ## Documentation and demo
-[http://josephuspaye.github.io/Keen-UI/](http://josephuspaye.github.io/Keen-UI/)
+[http://temperworks.github.io/Nucleus-UI-Kit/](http://temerworks.github.io/Nucleus-UI-Kit/)
 
 ## Requirements
-* [Vue.js](http://vuejs.org/) (^v2.1.4) - use [keen-ui@0.8.9](http://josephuspaye.github.io/Keen-UI/0.8.9/) for Vue 1.x support.
+* [Vue.js](http://vuejs.org/) (^v2.1.4)
 
 Optional
 * [Roboto font](https://www.google.com/fonts/specimen/Roboto) (Normal 400, Medium 500)
@@ -24,21 +26,21 @@ IE 10+ (due to [Flexbox support](http://caniuse.com/#search=flexbox)).
 ### NPM (recommended)
 
 ```bash
-npm install keen-ui-kit --save
+npm install nucleus-ui-kit --save
 ```
 
 ### Bower
 
 ```bash
-bower install keen-ui-kit --save
+bower install nucleus-ui-kit --save
 ```
 
 ## Usage
-> Make sure to include either the `dist/keen-ui.css` or `dist/keen-ui.min.css` file if you are not using individual components from `lib/` as the styles have been extracted into a single CSS file.
+> Make sure to include either the `dist/nucleus-ui-kit.css` or `dist/nucleus-ui-kit.min.css` file if you are not using individual components from `lib/` as the styles have been extracted into a single CSS file.
 
 ##### CSS Reset
 
-Before using Keen UI, ensure that the following CSS resets are applied to your site.
+Before using Nucleus, ensure that the following CSS resets are applied to your site.
 
 ```css
 *,
@@ -62,9 +64,9 @@ Use as a plugin (registers all components with Vue globally):
 
 ```js
 import Vue from 'vue';
-import KeenUI from 'keen-ui-kit';
+import KeenUI from 'nucleus-ui-kit';
 
-Vue.use(KeenUI);
+Vue.use(NucleusUI);
 
 new Vue({
     components: {
@@ -77,7 +79,7 @@ Use individual components:
 
 ```js
 import Vue from 'vue';
-import { UiAlert, UiButton } from 'keen-ui-kit';
+import { UiAlert, UiButton } from 'nucleus-ui-kit';
 
 new Vue({
     components: {
@@ -99,7 +101,7 @@ Example:
 <html>
 <head>
     ...
-    <link rel="stylesheet" href="path/to/keen-ui.min.css">
+    <link rel="stylesheet" href="path/to/nucleus-ui-kit.min.css">
     ...
 </head>
 <body>
@@ -108,7 +110,7 @@ Example:
     </div>
 
     <script src="path/to/vue.js"></script>
-    <script src="path/to/keen-ui.min.js"></script>
+    <script src="path/to/nucleus-ui-kit.min.js"></script>
     <script>
         new Vue({
             el: '#app',
@@ -133,8 +135,8 @@ Each component has been compiled as a self-contained file which you can use with
 
 ```js
 import Vue from 'vue';
-import 'keen-ui-kit/src/bootstrap'; // Required when using components from `lib/`, should be imported only once in your project
-import UiButton from 'keen-ui-kit/lib/UiButton';
+import 'nucleus-ui-kit/src/bootstrap'; // Required when using components from `lib/`, should be imported only once in your project
+import UiButton from 'nucleus-ui-kit/lib/UiButton';
 
 new Vue({
     components: {
@@ -159,6 +161,6 @@ new Vue({
 ## Licence
 Keen UI is open source and released under the [MIT Licence](LICENCE).
 
-Copyright (c) 2016-2017 [Josephus Paye II](https://twitter.com/JosephusPaye).
+Copyright (c) 2016-2017 [Temper Works](https://github.com/temperworks).
 
-> *PS: I would love to know how you're using Keen UI. Tweet to me at [@JosephusPaye](https://twitter.com/JosephusPaye)*.
+> *PS: We would love to know how you are using Nucleus*.

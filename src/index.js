@@ -33,7 +33,7 @@ import UiTextbox from './UiTextbox.vue';
 import UiToolbar from './UiToolbar.vue';
 import UiTooltip from './UiTooltip.vue';
 
-const Keen = {
+const Nucleus = {
     UiAlert,
     UiAutocomplete,
     UiButton,
@@ -103,12 +103,12 @@ const Keen = {
     }
 };
 
-// Automatically install Keen UI if Vue is available globally
+// Automatically install Nucleus if Vue is available globally
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(Keen);
+    window.Vue.use(Nucleus);
 }
 
-export default Keen;
+export default Nucleus;
 
 export { UiAlert };
 export { UiAutocomplete };
