@@ -1,4 +1,4 @@
-.keen-docs-mobile-sidebar__backdrop {
+.nucleus-docs-mobile-sidebar__backdrop {
     background-color: rgba(black, 0.2);
     bottom: 0;
     left: 0;
@@ -8,7 +8,7 @@
     z-index: $z-index-nav-drawer - 1;
 }
 
-.keen-docs-sidebar {
+.nucleus-docs-sidebar {
     background-color: #FFF;
     box-shadow: 0 2px 5px 0 rgba(black, 0.16), 0 2px 10px 0 rgba(black, 0.12);
     display: flex;
@@ -27,13 +27,13 @@
     }
 }
 
-.keen-docs-sidebar__scrollable {
+.nucleus-docs-sidebar__scrollable {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.keen-docs-sidebar__header {
+.nucleus-docs-sidebar__header {
     background-color: $toolbar-color;
     color: white;
     font-size: 1.5rem;
@@ -41,7 +41,7 @@
     padding: rem-calc(16px);
 }
 
-.keen-docs-sidebar__header-version {
+.nucleus-docs-sidebar__header-version {
     color: white;
     display: inline-block;
     font-size: 0.9rem;
@@ -54,7 +54,7 @@
     }
 }
 
-.keen-docs-sidebar__header-github-link {
+.nucleus-docs-sidebar__header-github-link {
     color: white;
     float: right;
     line-height: 1;
@@ -66,7 +66,7 @@
     }
 }
 
-.keen-docs-sidebar__description {
+.nucleus-docs-sidebar__description {
     color: rgba(black, 0.54);
     padding: rem-calc(16px);
 
@@ -79,7 +79,7 @@
     }
 }
 
-.keen-docs-sidebar__version-select {
+.nucleus-docs-sidebar__version-select {
     padding: rem-calc(16px);
     padding-top: rem-calc(8px);
 
@@ -92,21 +92,21 @@
     }
 }
 
-.keen-docs-sidebar__menu,
-.keen-docs-sidebar__menu-section-links {
+.nucleus-docs-sidebar__menu,
+.nucleus-docs-sidebar__menu-section-links {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.keen-docs-sidebar__menu-section-header {
+.nucleus-docs-sidebar__menu-section-header {
     color: rgba(black, 0.7);
     font-size: 1.1em;
     font-weight: bold;
     padding: rem-calc(16px);
 }
 
-.keen-docs-sidebar__menu-item {
+.nucleus-docs-sidebar__menu-item {
     align-items: center;
     color: rgba(black, 0.87);
     display: flex;
@@ -154,7 +154,7 @@
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-    .keen-docs-sidebar.is-desktop {
+    .nucleus-docs-sidebar.is-desktop {
         display: none;
     }
 }

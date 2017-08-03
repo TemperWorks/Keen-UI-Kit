@@ -1,19 +1,19 @@
 <template>
-    <aside class="keen-docs-sidebar">
-        <div class="keen-docs-sidebar__header">
-            <span class="keen-docs-sidebar__header-brand">Keen UI</span>
+    <aside class="nucleus-docs-sidebar">
+        <div class="nucleus-docs-sidebar__header">
+            <span class="nucleus-docs-sidebar__header-brand">Nucleus UI Kit</span>
 
             <a
-                class="keen-docs-sidebar__header-version"
-                href="https://github.com/JosephusPaye/Keen-UI/releases/tag/v1.0.0"
+                class="nucleus-docs-sidebar__header-version"
+                href="https://github.com/temperworks/Nucleus-UI-Kit/releases/tag/v0.0.1"
                 rel="noopener"
                 target="_blank"
                 title="View release notes"
-            >v1.0.0</a>
+            >v0.0.1</a>
 
             <a
-                class="keen-docs-sidebar__header-github-link"
-                href="https://github.com/JosephusPaye/Keen-UI"
+                class="nucleus-docs-sidebar__header-github-link"
+                href="https://github.com/temperworks/Nucleus-UI-Kit"
                 rel="noopener"
                 target="_blank"
                 title="View on Github"
@@ -24,13 +24,13 @@
             </a>
         </div>
 
-        <div class="keen-docs-sidebar__scrollable">
-            <div class="keen-docs-sidebar__description">
-                <p>A lightweight collection of essential UI components written with Vue.js and inspired by Material Design.</p>
-                <p>Created by <a rel="noopener" target="_blank" href="https://twitter.com/JosephusPaye">Josephus Paye II</a>.</p>
+        <div class="nucleus-docs-sidebar__scrollable">
+            <div class="nucleus-docs-sidebar__description">
+                <p>A delightful collection of UI components we use at Temper written with Vue, inspired by Material Design.</p>
+                <p>Created by <a rel="noopener" target="_blank" href="https://temper.works">Temper</a>.</p>
             </div>
 
-            <div class="keen-docs-sidebar__version-select">
+            <div class="nucleus-docs-sidebar__version-select">
                 <ui-select
                     :options="['0.8.9', '1.0.0']"
                     @select="onVersionSelect"
@@ -38,15 +38,15 @@
                 >Version</ui-select>
             </div>
 
-            <ul class="keen-docs-sidebar__menu">
-                <li class="keen-docs-sidebar__menu-section">
-                    <div class="keen-docs-sidebar__menu-section-header">Usage</div>
+            <ul class="nucleus-docs-sidebar__menu">
+                <li class="nucleus-docs-sidebar__menu-section">
+                    <div class="nucleus-docs-sidebar__menu-section-header">Usage</div>
 
-                    <ul class="keen-docs-sidebar__menu-section-links">
+                    <ul class="nucleus-docs-sidebar__menu-section-links">
                         <li>
                             <a
-                                class="keen-docs-sidebar__menu-item"
-                                href="https://github.com/JosephusPaye/Keen-UI/tree/master#keen-ui"
+                                class="nucleus-docs-sidebar__menu-item"
+                                href="https://github.com/temperworks/Nucleus-UI-Kit/tree/master#nucleus-ui-kit"
                                 rel="noopener"
                                 target="_blank"
                             >Getting Started <ui-icon>open_in_new</ui-icon></a>
@@ -54,8 +54,8 @@
 
                         <li>
                             <a
-                                class="keen-docs-sidebar__menu-item"
-                                href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs/Customization.md#customization"
+                                class="nucleus-docs-sidebar__menu-item"
+                                href="https://github.com/temperworks/Nucleus-UI-Kit/blob/master/docs/Customization.md#customization"
                                 rel="noopener"
                                 target="_blank"
                             >Customization <ui-icon>open_in_new</ui-icon></a>
@@ -63,13 +63,13 @@
                     </ul>
                 </li>
 
-                <li class="keen-docs-sidebar__menu-section" v-for="section in menu">
-                    <div class="keen-docs-sidebar__menu-section-header">{{ section.title }}</div>
+                <li class="nucleus-docs-sidebar__menu-section" v-for="section in menu">
+                    <div class="nucleus-docs-sidebar__menu-section-header">{{ section.title }}</div>
 
-                    <ul class="keen-docs-sidebar__menu-section-links">
+                    <ul class="nucleus-docs-sidebar__menu-section-links">
                         <li v-for="item in section.menu">
                             <router-link
-                                class="keen-docs-sidebar__menu-item" exact
+                                class="nucleus-docs-sidebar__menu-item" exact
                                 :to="item.path"
                             >
                                 {{ item.title }}
@@ -104,8 +104,8 @@ export default {
             let root = '';
             const component = window.location.hash + (version === '0.8.9' ? '-docs' : '');
 
-            if (window.location.hostname === 'josephuspaye.github.io') {
-                root = 'https://josephuspaye.github.io/Keen-UI';
+            if (window.location.hostname === 'temperworks.github.io') {
+                root = 'https://temperworks.github.io/Nucleus-UI-Kit';
             }
 
             window.location = `${root}/${version}/${component}`;

@@ -1,7 +1,7 @@
 {
   "name": "nucleus-ui-kit",
   "version": "0.0.1",
-  "description": "A delightfull collection of UI components we use at Temper written with Vue, inspired by Material Design.",
+  "description": "A delightful collection of UI components we use at Temper written with Vue, inspired by Material Design.",
   "main": "dist/nucleus-ui-kit.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js --open --inline --hot",
